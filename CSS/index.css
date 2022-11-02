@@ -1,0 +1,8 @@
+.navegacion{
+    display: flex;
+    flex-direction: column; 
+    align-content: space-around;
+}
+.navbar-brand{
+   padding-right: 150px; 
+}
