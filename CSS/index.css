@@ -2,7 +2,57 @@
     display: flex;
     flex-direction: column; 
     align-content: space-around;
+    background-color: #E0FFF1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 .navbar-brand{
-   padding-right: 150px; 
+    padding-right: 200px; 
+}
+.producto_back{
+    color: #8DB6AC;
+    font-family: Merienda;
+    width: 100%;
+    height: 873px;
+    left: 2855px;
+    top: 2443px;
+    background-image: url(../imagenes/Overlay2-burbujas.png);
+    
+   
+}
+h1.producto_titulo1 {
+    font-size: 60px;
+}
+h3.producto_titulo2 {
+    font-size: 28px;
+    margin-left: 80px;
+}
+.producto_bandaceleste{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(270deg, #93FFD8 -3.33%, rgba(255, 255, 255, 0) 77.81%);
+    
+    
+   
+      
+    
+}
+.producto_burbujas{    
+    width: 100%;
+    height: 200px;  
+    background: #E1FFFF;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.15);    
+    
+   
+    
+    
+    
+    
+}
+.producto_img{
+    width: 600px;
+    height: 500px;
+    left: 2855px;
+    top: 203px;
+    transform: translateY(-25%);
+        
 }
