@@ -1,3 +1,24 @@
+/************ ESTILOS GENERALES DOCUMENTO **************/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat";
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}
+
+
+/******************** HEADER ******************/
+/* nav */
+
 .navegacion{
     display: flex;
     flex-direction: column; 
@@ -8,41 +29,116 @@
 .navbar-brand{
     padding-right: 200px; 
 }
+
+/* INICIO */
+
 .producto_burbujas{
     color: #8DB6AC;
     font-family: Merienda;
+    margin: 0;
     width: 100%;
-    height: 100%px;
-    left: 2855px;
-    top: 2443px;
-    background-image: url(../imagenes/Overlay2-burbujas.png);   
+    height: 15rem;
+
+    background: url(../imagenes/Overlay2-burbujas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 h1.producto_titulo1 {
-    font-size: 80px;
+    width: 100%;
+
+    padding-top: 2rem;
+    padding-left: 5rem;
+
+    font-family: "Poppins";
+    font-style: italic;
+    font-size: 5rem;
+    font-weight: 500;
+
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.65);
 }
+
 h3.producto_titulo2 {
-    font-size: 40px;
-    margin-left: 80px;
+    width: 100%;
+
+    font-size: 1.2rem;
+    padding-left: 15rem;
+    margin-bottom: 5rem;
+
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+
+    color: #5A6A6A;
 }
+
 .producto_back{
-    position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(270deg, #93FFD8 -3.33%, rgba(255, 255, 255, 0) 77.81%);
-    
+    background: linear-gradient(270deg, #93FFD8 -3.33%, rgba(255, 255, 255, 0) 77.81%);   
 }
+
 .producto_bandaceleste{  
-    position: absolute;  
     width: 100%;
-    height: 250px;  
-    margin-top: 100px;
+    height: 18rem;  
+
     background: #E1FFFF;
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.15); 
 }
+
 .producto_img{
-    width: 700px;
-    height: 600px;
-    transform: translateY(-28%);
-    
-        
+    transform: scale(2) translateX(15%);   
+}
+
+
+/*********** CONTACTO ***********/
+.contacto_container{
+    max-width: 100%;
+
+    padding: 0;
+}
+
+.contacto_title{
+    width: 100%;
+    height: 9rem;
+
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    color: #8DB6AC;
+
+    background: url(../imagenes/Vector1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacto_title_text{
+    margin: 0;
+
+    padding-left: 3rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.contacto_text{
+    margin: 0;
+
+    padding-left: 3rem;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.contacto_links{
+    margin-top: 3rem;
+    padding-left: 5rem;
 }
