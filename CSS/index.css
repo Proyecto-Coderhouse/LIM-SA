@@ -149,6 +149,21 @@ img.producto_vector {
     background-repeat: no-repeat;
     background-size: cover;
 }
+img.comoseusa_imagen.img-fluid {
+    width: 55rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    
+}
+.testimonios{
+    margin: 3rem;
+    color: #8DB6AC;
+}
+.comoseusa_card{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
 
 
 /*********** SECCIONES ***********/
