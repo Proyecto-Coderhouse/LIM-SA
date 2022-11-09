@@ -2,13 +2,13 @@
 
 // Envio email a trves de emailjs
 
-function envio(nombre, email, mensaje, asunto){
+function envio(nombre, apellido, email, mensaje){
   
-  emailjs.send("Mirtha", "template_emailjs", {
-    from_name: nombre,
-    from_email: email,
+  emailjs.send("Mirtha", "template_5x7yshv", {
+    form_nombre: nombre,
+    form_apellido: apellido,
+    form_email: email,
     message: mensaje,
-    subject: asunto,
   })
   .then(function(response) {
     if(response.text === 'OK'){
@@ -30,25 +30,21 @@ function envio(nombre, email, mensaje, asunto){
 
 // declaro los campos
 
-const nombre = document.getElementById("nombre")
-const email = document.getElementById("email")
-const telefono = document.getElementById("telefono")
-const mensaje = document.getElementById("mensaje")
+const nombre = document.getElementById("form_nombre")
+const apellido = document.getElementById("form_apellido")
+const email = document.getElementById("form_email")
+const mensaje = document.getElementById("form_mensaje")
 const enviar = document.getElementById("enviar")
-const borrar = document.getElementById("borrar")
+
 
 
 // ============= Envio email ================================= //
 enviar.addEventListener('click', (e) => {
   e.preventDefault()
     
-  if(nombre.value != '' & ( email.value != '' || telefono.value != '' ) & mensaje.value != ''){
+  if(nombre.value != ''  &  apellido.value != '' &  email.value != '' & mensaje.value != ''){
 
-    let texto = mensaje.value
-
-    (telefono.value != '') && (texto = texto + '\n\nTelefono de contacto: ' + telefono.value)
-  
-    envio(nombre.value, email.value, texto, 'CONTACO sitio web')
+    envio(nombre.value, apellido.value, email.value, mensaje.value)
 
   } else {
 

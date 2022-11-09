@@ -125,6 +125,7 @@
       </div>
 
     </section>
+
     <!------------------COMO SE USA------------------------------>
 <section>
   <div class="como_titulo row">
@@ -138,17 +139,129 @@
 
     </section>
 
-<!--HRs provisorios-->
-<hr>
-<hr>
-<hr>
-<hr>
+
+
+<!------------------PRODUCTO------------------------------>
+    <section id="productoSection">
+
+    </section>
+
+
+<!------------------COMO COMPRAR------------------------------>
+    <section id="comoComprarSection" class="container-fluid section_container">
+
+      <div class="section_title_2 row">
+        <p class="section_title_text">Como comprar</p>
+      </div>
+
+      <!--------CARDS--------->
+      <div class="row justify-content-evenly py-5" style="width: 99vw;">
+        
+        <!-----------WhatsApp------->
+        <div class="col-md-3 justify-content-center">
+          <div class="card cardComprar">
+            
+            <div class="cardCircle">
+              <img src="./imagenes/ImageContainerWhatsapp.png" class="card-img-top cardImg" alt="whatsapp">
+            </div>
+
+            <div class="cardCircle sombra">
+            </div>
+            
+            <div class="card-body cardCuerpo">
+              <p class="cardTitle">Compras por whatsapp</p>
+              <div class="cardLink">
+                <a href="https://web.whatsapp.com/send?phone=(+54)93516230274" target="_blank" class="">IR A WHATSAPP</a>
+              </div>           
+            </div>
+          
+          </div>
+        </div>
+
+        <!-----------Puntos de venta------->
+         <div class="col-md-3 justify-content-center">
+            <div class="card cardComprar">
+
+              <div class="cardCircle">
+                <img src="./imagenes/ImageContainerUbicaciones.png" class="card-img-top cardImg" alt="ubicacion">
+              </div>
+
+              <div class="cardCircle sombra">
+              </div>
+
+              <div class="card-body cardCuerpo">
+                <p class="cardTitle">Compras en local</p>
+                <div class="cardLink">
+                  <a href="#" class="">VER PUNTOS DE VENTAS</a>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        
+      <!-------CONTACTO------->
+      <div>
+
+        <div class="section_subtitle">
+          ¿Te interesa comercializar nuestro producto?
+        </div>
+
+        <div class="section_subtitle_text">
+          Dejanos un mensaje y tu correo electrónico y nos comunicaremos contigo.
+        </div>
+
+
+        <form action="" class="container formulario">
+
+          <div class="row justify-content-between">
+          
+            <div class="form-floating mb-3 col-md-3">
+              <input type="text" class="form-control form_label" id="form_nombre" placeholder="Nombre">
+              <label for="floatingInput">Nombre</label>
+            </div>     
+
+            <div class="form-floating mb-3 col-md-3">
+              <input type="text" class="form-control form_label" id="form_apellido" placeholder=" Apellido">
+              <label for="floatingInput">Apellido</label>
+            </div>
+
+            <div class="form-floating mb-3 col-md-5">
+              <input type="email" class="form-control form_label" id="form_email" placeholder=" Correo electrónico">
+              <label for="floatingInput">Correo electrónico</label>
+            </div>
+          
+          </div>
+
+          <div class="row">
+            <div class="form-floating mb-3 col-12">
+              <textarea class="form-control textarea_label" rows="10" id="form_mensaje" placeholder="Mensaje" style="height: 10rem;" ></textarea>
+              <label for="floatingInput">Mensaje</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <button id="enviar" class="col-3 cardLink mt-4 mb-5" type="submit">
+                <span class="">ENVIAR</span>
+            </button>
+ 
+        </div>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
 
     <!------------------CONTACTO------------------------------>
-    <section id="contactoSection" class="container contacto_container">
+    <section id="contactoSection" class="container-fluid section_container">
       
-      <div class="contacto_title row">
-        <p class="contacto_title_text">Contacto</p>
+      <div class="section_title row">
+        <p class="section_title_text">Contacto</p>
       </div>
 
       <div>
@@ -169,7 +282,7 @@
             <img class=" img-fluid" src="./imagenes/instagram 1.png" alt="icono instagram"> @limsa.ok
           </p>
         </a>
-        <!--instagram-->
+        <!--correo-->
         <a href="mailto:claudiacas03@gmail.com" target="_blank">
           <p>
             <img class="img-fluid" src="./imagenes/bytesize_mail.png" alt="icono correo"> claudiacas03@gmail.com
@@ -181,20 +294,152 @@
 
 
     <!------------------SOBRE LA EMPRESA------------------------------>
-    <section id="sobreLaEmpresaSection">
+    <section id="sobreLaEmpresaSection" class="container-fluid section_container">
+
+      <div class="section_title_2 row">
+        <p class="section_title_text">Sobre la empresa</p>
+      </div>
+
+      <div class="row justify-content-evenly" style="width: 99vw;">
+        <div class="col-md-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum nobis deleniti tempora, eveniet dolores, beatae consectetur, voluptas amet veniam odio obcaecati mollitia magnam est a eos. Accusamus, odio ipsum?
+        </div>
+        <div class="col-md-5 text-center">
+          <img src="./imagenes/Prod LS-0418.png" class="img-fluid" alt="certificado impacto emprendedor">
+        </div>
+
+      </div>
 
     </section>
 
 
     <!------------------PREGUNTAS FRECUENTES------------------------------>
-    <section id="preguntasFrecuentesSection">
+    <section id="preguntasFrecuentesSection" class="container-fluid section_container">
+
+      <div class="preguntas_title">
+        Preguntas frecuentes
+      </div>
+
+      <div class="container-md">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          
+
+          <div class="accordion-item accordion_anwser">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                1. como compro mi producto
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item accordion_anwser">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                2. Precauciones
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item accordion_anwser">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                3. calzado
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item accordion_anwser">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                4. tengo una tienda
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item accordion_anwser">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                5. vents online
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item accordion_anwser">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                6. pregunta
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
 
     </section>
 
   </main>
 
   <!------------------FOOTER------------------------------>
-  <footer>
+  <footer class="container-fluid pt-5 mt-5 footer">
+    
+    <div class="row justify-content-center ">
+
+      <!--instagram-->
+      <div class="col-md-2 text-center">                    
+        <a href="https://www.instagram.com/limsa.ok/?hl=pt" target="_blank">
+          <img class=" img-fluid" src="./imagenes/instagram.png" alt="icono instagram"> Instagram
+        </a>
+      </div>
+    
+      <!--correo-->
+      <div class="col-md-2 text-center">
+        <a href="mailto:claudiacas03@gmail.com" target="_blank">
+          <img class="img-fluid" src="./imagenes/Vector 7.png" alt="icono correo"> Correo electrónico
+        </a> 
+      </div>
+    
+      <!--whatsapp-->
+      <div class="col-md-2 text-center">
+        <a href="https://web.whatsapp.com/send?phone=(+54)93516230274" target="_blank">
+          <img class="img-fluid" src="./imagenes/Vector.png" alt="icono whatsapp"> Whatsapp
+        </a>
+      </div>
+
+    </div>
+
+    <div class="row justify-content-center pt-5 pb-5">
+      Todos los derechos reservados a LIM-SA
+    </div>
 
   </footer>
   
