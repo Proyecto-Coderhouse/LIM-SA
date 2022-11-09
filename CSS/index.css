@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: "Montserrat";
 }
 
@@ -30,67 +29,121 @@ a:link, a:visited, a:active {
     padding-right: 200px; 
 }
 
-/* INICIO */
+/* INICIO-PRODUCTO */
 
 .producto_burbujas{
     color: #8DB6AC;
     font-family: Merienda;
-    margin: 0;
     width: 100%;
     height: 15rem;
-
     background: url(../imagenes/Overlay2-burbujas.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 h1.producto_titulo1 {
     width: 100%;
-
     padding-top: 2rem;
     padding-left: 5rem;
-
     font-family: "Poppins";
     font-style: italic;
     font-size: 5rem;
     font-weight: 500;
-
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.65);
 }
 
 h3.producto_titulo2 {
     width: 100%;
-
     font-size: 1.2rem;
     padding-left: 15rem;
     margin-bottom: 5rem;
-
     font-family: 'Montserrat';
     font-style: italic;
     font-weight: 600;
-
     display: flex;
     align-items: center;
-
     color: #5A6A6A;
 }
 
 .producto_back{
     width: 100%;
-    height: 100%;
+    height: 40rem;
     background: linear-gradient(270deg, #93FFD8 -3.33%, rgba(255, 255, 255, 0) 77.81%);   
 }
 
 .producto_bandaceleste{  
     width: 100%;
     height: 18rem;  
-
+    display: flex;
     background: #E1FFFF;
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.15); 
 }
 
-.producto_img{
-    transform: scale(2) translateX(15%);   
+.producto_imagen{
+    display: flex;
+}
+.producto_imagenes{
+    display: flex;
+}
+img.producto_principal {
+    height: 40rem;
+    transform: translateY(-25%);
+    width: 45rem;
+}
+img.producto_amigable {
+    width: 13rem;
+    margin-left: 50px;
+}
+img.producto_rapido {
+    width: 13rem;
+    margin-left: 50px;
+}
+img.producto_economico {
+    width: 13rem;
+    height: 16rem;
+    margin-left: 50px;
+}
+img.producto_vector {
+    width: 100%;
+    margin-top: 4rem;
+}
+/*********** LIMPIEZA ***********/
+.limpieza{
+    display: flex;
+    margin-top: 10rem; 
+    margin-left: 3rem;   
+}
+
+.limpieza_titulo{
+    color: #8DB6AC;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.limpieza_parrafo{
+    margin-top: 3rem;
+}
+.limpieza_carrusel{
+    width: 50rem;
+}
+.carrusel_imagen{
+    width: 42rem;
+    margin-left: 3rem;
+}
+
+/*********** COMO SE USA ***********/
+
+.como_titulo{
+    width: 100%;
+    height: 9rem;
+
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    color: #8DB6AC;
+
+    background: url(../imagenes/VectorComoSeUsa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
