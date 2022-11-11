@@ -7,6 +7,7 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="stylesheet" href="./CSS/animaciones.css">
   
   <title>LIM-SA</title>
   <meta name="description" content="Limpiador ecológico para zapatillas, sin agua y en tres simples pasos">
@@ -20,24 +21,32 @@
 
 <body>
 
+  <!---------WHATSAPP FIJO--------->
+
+  <div class="fixed_wa">
+    <a href="https://web.whatsapp.com/send?phone=(+54)93516230274" target="_blank">
+      <img src="./imagenes/ImageContainerWhatsapp.png" class="fixed_img" alt="logo whatsapp">
+    </a>  
+  </div>
+
   <!------------------NAVEGACION------------------------------>
   <header class="navegacion">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="./imagenes/image 1.png" alt="" width="80" height="80">
+          <img src="./imagenes/LIMSA_PERILUX_LOGO 1.svg" alt="" width="80" height="80">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#inicioSection">INICIO</a>
-            <a class="nav-link" href="#productoSection">PRODUCTO</a>
-            <a class="nav-link" href="#comoComprarSection">COMO COMPRAR</a>
-            <a class="nav-link active" aria-current="page" href="#contactoSection">CONTACTO</a>
-            <a class="nav-link" href="#sobreLaEmpresaSection">SOBRE LA EMPRESA</a>
-            <a class="nav-link" href="#preguntasFrecuentesSection">PREGUNTAS FRECUENTES</a>                  
+            <a class="nav-link navbar_text" href="#">INICIO</a>
+            <a class="nav-link navbar_text" href="#limpiezaSection">PRODUCTO</a>
+            <a class="nav-link navbar_text" href="#comoComprarSection">CÓMO COMPRAR</a>
+            <a class="nav-link navbar_text" href="#contactoSection">CONTACTO</a>
+            <a class="nav-link navbar_text" href="#sobreLaEmpresaSection">SOBRE LA EMPRESA</a>
+            <a class="nav-link navbar_text" href="#preguntasFrecuentesSection">PREGUNTAS FRECUENTES</a>                  
           </div>
         </div>
       </div>
@@ -45,10 +54,13 @@
   </header>
 
 
-  <main class="">
+  <main class="" style="margin-top: 100px">
   
      <!------------------INICIO-PRODUCTO------------------------------>
-    <section id="inicioSection container">
+
+    <div id="inicioSection" style="height: 0px;"></div>
+
+    <section>
       <div class="producto_back">
         
         <div class="producto_burbujas">
@@ -61,9 +73,9 @@
              
           <div class="producto_imagenes">
             <img class="producto_principal"  src="./imagenes/Backgorund-image.png" alt="">
-            <img class="producto_amigable" src="./imagenes/Property 1=Amigable.png" alt="">
-            <img class="producto_rapido" src="./imagenes/Property 1=Tiempo1.png" alt="">
-            <img class="producto_economico" src="./imagenes/Property 1=economico.png" alt="">
+            <img class="producto_amigable animated_icon" src="./imagenes/Property 1=Amigable.png" alt="">
+            <img class="producto_rapido animated_icon" src="./imagenes/Property 1=Tiempo1.png" alt="">
+            <img class="producto_economico animated_icon" src="./imagenes/Property 1=economico.png" alt="">
           </div>
           </div>
         </div> 
@@ -78,7 +90,10 @@
     
 
      <!------------------LIMPIEZA------------------------------>
-    <section class="limpieza" id="limpiezaSection">
+
+    <div id="limpiezaSection" style="height: 0px;"></div>
+
+    <section class="limpieza" >
       <div>
         <div>
         <h3 class="limpieza_titulo">
@@ -158,11 +173,6 @@
   </section>
 </section>
 
-     <!------------------COMO COMPRAR------------------------------>
-    <section id="comoComprarSection">
-     
-
-    </section>
 
 
 
@@ -173,173 +183,192 @@
 
 
 <!------------------COMO COMPRAR------------------------------>
-    <section id="comoComprarSection" class="container-fluid section_container">
+    <section class="section_container">
 
-      <div class="section_title_2 row">
+      <div id="comoComprarSection" style="height: 50px;"></div>
+
+      <div class="section_title_2">
         <p class="section_title_text">Como comprar</p>
       </div>
 
+
+      <div class="container-xxl">
+
       <!--------CARDS--------->
-      <div class="row justify-content-evenly py-5" style="width: 99vw;">
+        <div class="row justify-content-evenly py-5">
         
-        <!-----------WhatsApp------->
-        <div class="col-md-3 justify-content-center">
-          <div class="card cardComprar">
-            
-            <div class="cardCircle">
-              <img src="./imagenes/ImageContainerWhatsapp.png" class="card-img-top cardImg" alt="whatsapp">
-            </div>
-
-            <div class="cardCircle sombra">
-            </div>
-            
-            <div class="card-body cardCuerpo">
-              <p class="cardTitle">Compras por whatsapp</p>
-              <div class="cardLink">
-                <a href="https://web.whatsapp.com/send?phone=(+54)93516230274" target="_blank" class="">IR A WHATSAPP</a>
-              </div>           
-            </div>
-          
-          </div>
-        </div>
-
-        <!-----------Puntos de venta------->
-         <div class="col-md-3 justify-content-center">
+          <!-----------WhatsApp------->
+          <div class="col-md-3 justify-content-center">
             <div class="card cardComprar">
-
+              
               <div class="cardCircle">
-                <img src="./imagenes/ImageContainerUbicaciones.png" class="card-img-top cardImg" alt="ubicacion">
+                <img src="./imagenes/ImageContainerWhatsapp.png" class="card-img-top cardImg" alt="whatsapp">
               </div>
-
+  
               <div class="cardCircle sombra">
               </div>
-
+              
               <div class="card-body cardCuerpo">
-                <p class="cardTitle">Compras en local</p>
+                <p class="cardTitle">Compras por whatsapp</p>
                 <div class="cardLink">
-                  <a href="#" class="">VER PUNTOS DE VENTAS</a>
-                </div>
-                
+                  <a href="https://web.whatsapp.com/send?phone=(+54)93516230274" target="_blank" class="">IR A WHATSAPP</a>
+                </div>           
               </div>
-
+            
             </div>
           </div>
-
-        </div>
-        
-      <!-------CONTACTO------->
-      <div>
-
-        <div class="section_subtitle">
-          ¿Te interesa comercializar nuestro producto?
-        </div>
-
-        <div class="section_subtitle_text">
-          Dejanos un mensaje y tu correo electrónico y nos comunicaremos contigo.
-        </div>
-
-
-        <form action="" class="container formulario">
-
-          <div class="row justify-content-between">
+  
+          <!-----------Puntos de venta------->
+           <div class="col-md-3 justify-content-center">
+              <div class="card cardComprar">
+  
+                <div class="cardCircle">
+                  <img src="./imagenes/ImageContainerUbicaciones.png" class="card-img-top cardImg" alt="ubicacion">
+                </div>
+  
+                <div class="cardCircle sombra">
+                </div>
+  
+                <div class="card-body cardCuerpo">
+                  <p class="cardTitle">Compras en local</p>
+                  <div class="cardLink">
+                    <a href="#" class="">VER PUNTOS DE VENTAS</a>
+                  </div>
+                  
+                </div>
+  
+              </div>
+            </div>
+  
+          </div>
           
-            <div class="form-floating mb-3 col-md-3">
-              <input type="text" class="form-control form_label" id="form_nombre" placeholder="Nombre">
-              <label for="floatingInput">Nombre</label>
-            </div>     
-
-            <div class="form-floating mb-3 col-md-3">
-              <input type="text" class="form-control form_label" id="form_apellido" placeholder=" Apellido">
-              <label for="floatingInput">Apellido</label>
-            </div>
-
-            <div class="form-floating mb-3 col-md-5">
-              <input type="email" class="form-control form_label" id="form_email" placeholder=" Correo electrónico">
-              <label for="floatingInput">Correo electrónico</label>
-            </div>
-          
+        <!-------CONTACTO------->
+        <div>
+  
+          <div class="section_subtitle">
+            ¿Te interesa comercializar nuestro producto?
           </div>
-
-          <div class="row">
-            <div class="form-floating mb-3 col-12">
-              <textarea class="form-control textarea_label" rows="10" id="form_mensaje" placeholder="Mensaje" style="height: 10rem;" ></textarea>
-              <label for="floatingInput">Mensaje</label>
-            </div>
+  
+          <div class="section_subtitle_text">
+            Dejanos un mensaje y tu correo electrónico y nos comunicaremos contigo.
           </div>
-
-          <div class="row">
-            <button id="enviar" class="col-3 cardLink mt-4 mb-5" type="submit">
-                <span class="">ENVIAR</span>
-            </button>
- 
+  
+  
+          <form action="" class="container formulario">
+  
+            <div class="row justify-content-between">
+            
+              <div class="form-floating mb-3 col-md-3">
+                <input type="text" class="form-control form_label" id="form_nombre" placeholder="Nombre">
+                <label for="floatingInput">Nombre</label>
+              </div>     
+  
+              <div class="form-floating mb-3 col-md-3">
+                <input type="text" class="form-control form_label" id="form_apellido" placeholder=" Apellido">
+                <label for="floatingInput">Apellido</label>
+              </div>
+  
+              <div class="form-floating mb-3 col-md-5">
+                <input type="email" class="form-control form_label" id="form_email" placeholder=" Correo electrónico">
+                <label for="floatingInput">Correo electrónico</label>
+              </div>
+            
+            </div>
+  
+            <div class="row">
+              <div class="form-floating mb-3 col-12">
+                <textarea class="form-control textarea_label" rows="10" id="form_mensaje" placeholder="Mensaje" style="height: 10rem;" ></textarea>
+                <label for="floatingInput">Mensaje</label>
+              </div>
+            </div>
+  
+            <div class="row">
+              <button id="enviar" class="col-3 cardLink mt-4 mb-5" type="submit">
+                  <span class="">ENVIAR</span>
+              </button>
+   
+          </div>
+  
+          </form>
+  
         </div>
-
-        </form>
-
       </div>
-
+      
     </section>
 
 
 
     <!------------------CONTACTO------------------------------>
-    <section id="contactoSection" class="container-fluid section_container">
+    <section class="section_container">
+
+      <div id="contactoSection" style="height: 50px;"></div>
       
-      <div class="section_title row">
+      <div class="section_title">
         <p class="section_title_text">Contacto</p>
       </div>
 
-      <div>
-        <p class="contacto_text">Seguinos en nuestras redes sociales para enterarte de las ultimas novedades.</p>
-        <p class="contacto_text">También, contactanos a través de whatsapp o correo electrónico.</p>
+      <div class="container-xxl">
+
+        <div>
+          <p class="contacto_text">Seguinos en nuestras redes sociales para enterarte de las ultimas novedades.</p>
+          <p class="contacto_text">También, contactanos a través de whatsapp o correo electrónico.</p>
+        </div>
+  
+        <div class="contacto_links">
+          <!--whatsapp-->
+          <a href="https://web.whatsapp.com/send?phone=(+54)93516230274" target="_blank">
+            <p>
+              <img class="img-fluid" src="./imagenes/logos_whatsapp-icon.png" alt="icono whatsapp"> +54 9 351623074
+            </p>
+          </a>
+          <!--instagram-->
+          <a href="https://www.instagram.com/limsa.ok/?hl=pt" target="_blank">
+            <p>
+              <img class=" img-fluid" src="./imagenes/instagram 1.png" alt="icono instagram"> @limsa.ok
+            </p>
+          </a>
+          <!--correo-->
+          <a href="mailto:claudiacas03@gmail.com" target="_blank">
+            <p>
+              <img class="img-fluid" src="./imagenes/bytesize_mail.png" alt="icono correo"> claudiacas03@gmail.com
+            </p>
+          </a>     
+        </div>
+
       </div>
 
-      <div class="contacto_links">
-        <!--whatsapp-->
-        <a href="https://web.whatsapp.com/send?phone=(+54)93516230274" target="_blank">
-          <p>
-            <img class="img-fluid" src="./imagenes/logos_whatsapp-icon.png" alt="icono whatsapp"> +54 9 351623074
-          </p>
-        </a>
-        <!--instagram-->
-        <a href="https://www.instagram.com/limsa.ok/?hl=pt" target="_blank">
-          <p>
-            <img class=" img-fluid" src="./imagenes/instagram 1.png" alt="icono instagram"> @limsa.ok
-          </p>
-        </a>
-        <!--correo-->
-        <a href="mailto:claudiacas03@gmail.com" target="_blank">
-          <p>
-            <img class="img-fluid" src="./imagenes/bytesize_mail.png" alt="icono correo"> claudiacas03@gmail.com
-          </p>
-        </a>     
-      </div>
+
 
     </section>
 
 
     <!------------------SOBRE LA EMPRESA------------------------------>
-    <section id="sobreLaEmpresaSection" class="container-fluid section_container">
+    <section class="section_container">
 
-      <div class="section_title_2 row">
+      <div id="sobreLaEmpresaSection" style="height: 50px;"></div>
+
+      <div class="section_title_2">
         <p class="section_title_text">Sobre la empresa</p>
       </div>
 
-      <div class="row justify-content-evenly" style="width: 99vw;">
-        <div class="col-md-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum nobis deleniti tempora, eveniet dolores, beatae consectetur, voluptas amet veniam odio obcaecati mollitia magnam est a eos. Accusamus, odio ipsum?
+      <div class="container-xxl">
+        <div class="row justify-content-evenly">
+          <div class="col-md-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum nobis deleniti tempora, eveniet dolores, beatae consectetur, voluptas amet veniam odio obcaecati mollitia magnam est a eos. Accusamus, odio ipsum?
+          </div>
+          <div class="col-md-5 text-center">
+            <img src="./imagenes/Prod LS-0418.png" class="img-fluid" alt="certificado impacto emprendedor">
+          </div>
         </div>
-        <div class="col-md-5 text-center">
-          <img src="./imagenes/Prod LS-0418.png" class="img-fluid" alt="certificado impacto emprendedor">
-        </div>
-
       </div>
-
+      
     </section>
 
 
     <!------------------PREGUNTAS FRECUENTES------------------------------>
-    <section id="preguntasFrecuentesSection" class="container-fluid section_container">
+    <section class="container-fluid section_container">
+
+      <div id="preguntasFrecuentesSection" style="height: 50px;"></div>
 
       <div class="preguntas_title">
         Preguntas frecuentes
@@ -352,7 +381,7 @@
           <div class="accordion-item accordion_anwser">
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                1. como compro mi producto
+                1. ¿Cómo compro mi producto?
               </button>
             </h2>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
@@ -365,7 +394,7 @@
           <div class="accordion-item accordion_anwser">
             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                2. Precauciones
+                2. ¿Qué precauciones debo tener con el producto?
               </button>
             </h2>
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
@@ -378,7 +407,7 @@
           <div class="accordion-item accordion_anwser">
             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                3. calzado
+                3. ¿Sobre qué tipo de calzados debo usar el producto?
               </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
@@ -391,7 +420,7 @@
           <div class="accordion-item accordion_anwser">
             <h2 class="accordion-header" id="panelsStayOpen-headingFour">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                4. tengo una tienda
+                4. Tengo una tienda y quiero comercializar sus productos ¿Cómo hago?
               </button>
             </h2>
             <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
@@ -404,7 +433,7 @@
           <div class="accordion-item accordion_anwser">
             <h2 class="accordion-header" id="panelsStayOpen-headingFive">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                5. vents online
+                5. ¿Se realizan ventas on-line? ¿en dónde puedo encontrar el producto?
               </button>
             </h2>
             <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
@@ -417,7 +446,7 @@
           <div class="accordion-item accordion_anwser">
             <h2 class="accordion-header" id="panelsStayOpen-headingSix">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
-                6. pregunta
+                6. Pregunta
               </button>
             </h2>
             <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
@@ -440,29 +469,29 @@
     <div class="row justify-content-center ">
 
       <!--instagram-->
-      <div class="col-md-2 text-center">                    
-        <a href="https://www.instagram.com/limsa.ok/?hl=pt" target="_blank">
+      <div class="col-md-2 py-2 text-center">                    
+        <a href="https://www.instagram.com/limsa.ok/?hl=pt" target="_blank" class="footer_text">
           <img class=" img-fluid" src="./imagenes/instagram.png" alt="icono instagram"> Instagram
         </a>
       </div>
     
       <!--correo-->
-      <div class="col-md-2 text-center">
-        <a href="mailto:claudiacas03@gmail.com" target="_blank">
+      <div class="col-md-2 py-2 text-center">
+        <a href="mailto:claudiacas03@gmail.com" target="_blank" class="footer_text">
           <img class="img-fluid" src="./imagenes/Vector 7.png" alt="icono correo"> Correo electrónico
         </a> 
       </div>
     
       <!--whatsapp-->
-      <div class="col-md-2 text-center">
-        <a href="https://web.whatsapp.com/send?phone=(+54)93516230274" target="_blank">
+      <div class="col-md-2 py-2 text-center">
+        <a href="https://web.whatsapp.com/send?phone=(+54)93516230274" target="_blank" class="footer_text">
           <img class="img-fluid" src="./imagenes/Vector.png" alt="icono whatsapp"> Whatsapp
         </a>
       </div>
 
     </div>
 
-    <div class="row justify-content-center pt-5 pb-5">
+    <div class="row justify-content-center pt-4 pb-5" style="font-size: 0.8rem;">
       Todos los derechos reservados a LIM-SA
     </div>
 

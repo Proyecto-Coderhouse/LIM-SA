@@ -13,13 +13,36 @@ body{
     background-color: #FFFFF9; 
  }
 
-a:link, a:visited, a:active {
+ main a:link, main a:visited, main a:active {
     text-decoration:none;
     color: black;
 }
 
-
 /******************** HEADER ******************/
+
+/*************** Whatsapp fijo ************/
+
+.fixed_wa{
+    position: fixed;
+    bottom: 5rem;
+    right: 3rem;
+
+    width: 4rem;
+    height: 4rem;
+
+    z-index: 100;
+}
+
+.fixed_wa:hover{
+    -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+	        animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+
+.fixed_img{
+    width: 100%;
+    object-fit: contain;
+}
+
 /* nav */
 
 .navegacion{
@@ -28,10 +51,36 @@ a:link, a:visited, a:active {
     align-content: space-around;
     background-color: #E0FFF1;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
 }
 .navbar-brand{
-    padding-right: 200px; 
+    padding-right: 0px; 
 }
+
+.navbar_text{
+    margin-right: 0.5rem;
+    padding-bottom: 0;
+    color: #6EA06E;
+    font-size: 1rem;
+    font-weight: 500;
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .6s;
+}
+
+.navbar_text:hover{
+    color: #6EA06E;
+
+    background-size: 100% 2px;
+}
+
 
 /* INICIO-PRODUCTO */
 
@@ -70,7 +119,7 @@ h3.producto_titulo2 {
 .producto_back{
     width: 100%;
     height: 40rem;
-    background: linear-gradient(270deg, #93FFD8 -3.33%, rgba(255, 255, 255, 0) 77.81%);   
+    background: linear-gradient(270deg, #93FFD8 -3.33%, rgba(255, 255, 255, 0) 77.81%);
 }
 
 .producto_bandaceleste{  
@@ -106,11 +155,46 @@ img.producto_economico {
     height: 16rem;
     margin-left: 50px;
 }
+
+
+.animated_icon{
+    position: relative;
+    animation-name: out;
+    animation-duration:1.5s;
+}
+
+
+.animated_icon:hover{
+    animation-name: in;
+    animation-duration:2s;
+    top: -60px;
+}
+
+@keyframes in {
+    0% {top: 0px;}
+    25% {top: -70px}
+    50% {top: -55px}
+    75% {top: -62px}
+    100% {top: -60px;}
+}
+
+@keyframes out {
+    0% {top: -60px;}
+    25% {top: 10px}
+    50% {top: -2px}
+    75% {top: 1px}
+    100% {top: 0px;}
+}
+
+
+
 img.producto_vector {
     width: 100%;
     margin-top: 4rem;
 }
+
 /*********** LIMPIEZA ***********/
+
 .limpieza{
     display: flex;
     margin-top: 10rem; 
@@ -172,6 +256,7 @@ img.comoseusa_imagen.img-fluid {
 .section_container{
     width: 100%;
     padding: 0;
+    margin: 0;
 }
 
 .section_title, .section_title_2{
@@ -194,6 +279,8 @@ img.comoseusa_imagen.img-fluid {
 
 .section_title_2{
     background: url(../imagenes/Vector2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section_title_text{
@@ -290,6 +377,10 @@ img.comoseusa_imagen.img-fluid {
     background: #E1FFFF;
 }
 
+.cardLink:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 .formulario{
     margin-top: 3rem;
 }
@@ -376,4 +467,11 @@ img.comoseusa_imagen.img-fluid {
 
 .footer{
     background-color: #E0FFF1;
+    font-size: 1rem;
+}
+
+
+.footer_text:link, .footer_text:visited, .footer_text:active {
+    text-decoration:none;
+    color: black;
 }
