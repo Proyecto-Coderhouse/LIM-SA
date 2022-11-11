@@ -20,7 +20,7 @@ body{
 
 /******************** HEADER ******************/
 
-/*************** Whatsapp fijo ************/
+/************ Whatsapp fijo *********/
 
 .fixed_wa{
     position: fixed;
@@ -43,7 +43,8 @@ body{
     object-fit: contain;
 }
 
-/* nav */
+
+/************ nav ************/
 
 .navegacion{
     display: flex;
@@ -80,6 +81,7 @@ body{
 
     background-size: 100% 2px;
 }
+
 
 
 /* INICIO-PRODUCTO */
@@ -157,6 +159,7 @@ img.producto_economico {
 }
 
 
+
 .animated_icon{
     position: relative;
     animation-name: out;
@@ -193,6 +196,7 @@ img.producto_vector {
     margin-top: 4rem;
 }
 
+
 /*********** LIMPIEZA ***********/
 
 .limpieza{
@@ -217,6 +221,7 @@ img.producto_vector {
     margin-left: 3rem;
 }
 
+
 /*********** COMO SE USA ***********/
 
 .como_titulo{
@@ -234,12 +239,34 @@ img.producto_vector {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 img.comoseusa_imagen.img-fluid {
     width: 55rem;
     margin-top: 3rem;
     margin-left: 2rem;
-    
 }
+
+
+.pasos_img{
+    width: 60%;
+    flex: none;
+}
+
+.mobile_use{
+    display: none;
+}
+
+@media screen  and (max-width: 600px){
+    .desktop_use{
+        display: none;
+    }
+    .mobile_use{
+        display: block;
+    }
+}
+
+
+
 .testimonios{
     margin: 3rem;
     color: #8DB6AC;
@@ -447,6 +474,7 @@ img.comoseusa_imagen.img-fluid {
 .preguntas_container{
     padding: 0;
 }
+
 
 .accordion_anwser{
     border: none;

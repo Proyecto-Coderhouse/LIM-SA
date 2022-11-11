@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
   <!-- CSS only -->
+  <!--
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
   <link rel="stylesheet" href="./CSS/index.css">
   <link rel="stylesheet" href="./CSS/animaciones.css">
   
@@ -143,12 +147,26 @@
 
     <!------------------COMO SE USA------------------------------>
 <section>
-  <div class="como_titulo row">
+  
+  <div class="section_title">
     <p class="section_title_text">¿Como se usa?</p>
   </div>
-  <div >
-    <img class=" comoseusa_imagen img-fluid" src="./imagenes/CardColectionPasos-container.png" alt="">
+
+  <!------Se muestra solo en desktop----->
+  <div class="container-xxl mt-5 desktop_use" >
+    <div class="row justify-content-start"><img class="col pasos_img img-fluid" src="./imagenes/cardPasosDesktop1.png" alt=""></div>
+    <div class="row justify-content-center"><img class="col pasos_img img-fluid" src="./imagenes/cardPasosDesktop2.png" alt=""></div>
+    <div class="row justify-content-end"><img class="col pasos_img img-fluid" src="./imagenes/cardPasosDesktop3.png" alt=""></div>
   </div>
+
+  <!------Se muestra solo en mobile----->
+  <div class="container mt-5 mobile_use">
+    <div class="row"><img class="col img-fluid" src="./imagenes/CardPasos1.png" alt=""></div>
+    <div class="row"><img class="col img-fluid" src="./imagenes/CardPasos2.png" alt=""></div>
+    <div class="row"><img class="col img-fluid" src="./imagenes/CardPasos3.png" alt=""></div>
+  </div>
+
+
   <h3 class="testimonios text-center">Testimonios</h3>
   
   <section class="comoseusa_card">
@@ -384,7 +402,7 @@
                 1. ¿Cómo compro mi producto?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
                 <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
@@ -397,7 +415,7 @@
                 2. ¿Qué precauciones debo tener con el producto?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
                 <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
@@ -410,7 +428,7 @@
                 3. ¿Sobre qué tipo de calzados debo usar el producto?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
                 <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
@@ -423,7 +441,7 @@
                 4. Tengo una tienda y quiero comercializar sus productos ¿Cómo hago?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
                 <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
@@ -436,7 +454,7 @@
                 5. ¿Se realizan ventas on-line? ¿en dónde puedo encontrar el producto?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
                 <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
@@ -449,7 +467,7 @@
                 6. Pregunta
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
                 <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
