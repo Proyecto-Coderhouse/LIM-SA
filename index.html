@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./assets/css/bootstrap.css">
   <link rel="stylesheet" href="./CSS/index.css">
   <link rel="stylesheet" href="./CSS/animaciones.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   
   <title>LIM-SA</title>
   <meta name="description" content="Limpiador ecológico para zapatillas, sin agua y en tres simples pasos">
@@ -19,6 +20,7 @@
 
   <!-- scripts -->
   <script defer src="js/contactoEmail.js"></script>
+  <script defer src="js/modal.js"></script>
 
 </head>
 
@@ -249,8 +251,8 @@
   
                 <div class="card-body cardCuerpo">
                   <p class="cardTitle">Compras en local</p>
-                  <div class="cardLink">
-                    <a href="#" class="">VER PUNTOS DE VENTAS</a>
+                  <div class="cardLink" id="puntosVenta">
+                    VER PUNTOS DE VENTAS
                   </div>
                   
                 </div>
@@ -259,6 +261,27 @@
             </div>
   
           </div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
           
         <!-------CONTACTO------->
         <div>
@@ -272,7 +295,7 @@
           </div>
   
   
-          <form action="" class="container formulario">
+          <form action="" class="container formulario" id="formulario">
   
             <div class="row justify-content-between">
             
@@ -397,7 +420,7 @@
           
 
           <div class="accordion-item accordion_anwser">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <h2 class="accordion-header aco" id="panelsStayOpen-headingOne">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                 1. ¿Cómo compro mi producto?
               </button>
@@ -523,6 +546,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">(function(){emailjs.init("PESoLo7touhWDBnuU");})();</script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 </body>
 </html>
