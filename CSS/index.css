@@ -211,18 +211,20 @@ img.producto_vector {
     color: #8DB6AC;
     font-size: 2rem;
     margin-bottom: 3rem;
+    font-family: 'Poppins';
+    font-weight: 500;
 }
 .limpieza_parrafo{
     margin-top: 3rem;
 }
 .limpieza_carrusel{
     width: 50rem;
+  
 }
 .carrusel_imagen{
     width: 42rem;
     margin-left: 3rem;
 }
-
 
 /*********** COMO SE USA ***********/
 
@@ -268,17 +270,28 @@ img.comoseusa_imagen.img-fluid {
 }
 
 
+/* testimonios */
 
 .testimonios{
-    margin: 3rem;
-    color: #8DB6AC;
-}
-.comoseusa_card{
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-around;
+    
+    margin-top: 4rem;
+    color: #5A6A6A;
+    font-family: 'Poppins';
 }
 
+.card_size{
+    width: 18rem;
+    height: 40rem;
+}
+
+
+.card_testimonio_title{
+    font-weight: 800;   
+}
+
+.card_testimonio_text{
+    font-style: italic;
+}
 
 /*********** SECCIONES ***********/
 
@@ -581,8 +594,7 @@ img.comoseusa_imagen.img-fluid {
 .accordion_anwser{
     border: none;
     border-radius: 0px;
-    border-bottom: 1px solid rgb(134, 134, 134);
-    
+    border-bottom: 1px solid rgb(134, 134, 134);  
     padding-top: 1rem;
 }
 
@@ -606,3 +618,4 @@ img.comoseusa_imagen.img-fluid {
     text-decoration:none;
     color: black;
 }
+
