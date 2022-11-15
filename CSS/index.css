@@ -93,6 +93,7 @@ body{
     font-family: Merienda;
     width: 100%;
     height: 15rem;
+    margin: 0;
     background: url(../imagenes/Overlay2-burbujas.png);
 }
 
@@ -130,50 +131,111 @@ h3.producto_titulo2 {
     width: 100%;
     height: 18rem;  
     display: flex;
+    margin: 0;
     background: #E1FFFF;
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.15); 
 }
 
-.producto_imagen{
-    display: flex;
-}
-.producto_imagenes{
-    display: flex;
-}
+
 img.producto_principal {
-    height: 40rem;
-    transform: translateY(-25%);
-    width: 45rem;
+    max-width: 600px;
+    transform: translateY(-3rem) scale(1.5);
 }
-img.producto_amigable {
-    width: 10rem;
+
+
+.iconos_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: 18rem;
-    
-}
-img.producto_rapido {
-    width: 10rem;
-    
-}
-img.producto_economico {
-    width: 10rem;
-    height: 16rem;
-    
+    justify-content: center;
 }
 
+.icon_img_container{ 
+    display: flex;
+    height: 12rem;
+    width: 12rem;
 
+    justify-content: center;
+    align-items: flex-end;
 
-.animated_icon{
     position: relative;
     animation-name: out;
     animation-duration:1.5s;
 }
 
-
-.animated_icon:hover{
+.icon_img_container:hover{
     animation-name: in;
     animation-duration:2s;
     top: -60px;
 }
+
+
+.icon_text{
+    width: 12rem;
+    height: 3rem;
+    
+    text-align: center;
+    color: #5A6A6A;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+@media screen  and (max-width: 1300px){
+    .icon_img_container{
+        width: 10rem;
+    }
+    .icon_text{
+        width: 10rem;
+        font-size: .8rem;
+    }
+}
+
+@media screen  and (max-width: 1100px){
+    .icon_img_container{
+        width: 8rem;
+    }
+    .icon_text{
+        width: 8rem;
+        font-size: .8rem;
+    }
+    img.producto_principal {
+        max-width: 500px;
+        transform: translateY(-1rem) scale(1.5);
+    }
+
+}
+
+@media screen  and (max-width: 830px){
+    h1.producto_titulo1 {
+        font-size: 4rem;
+    }  
+    h3.producto_titulo2 {
+        font-size: 1.2rem;
+        padding-left: 5rem;
+    }
+    
+    
+    .icon_img_container{
+        width: 6rem;
+    }
+    .icon_text{
+        width: 6rem;
+        font-size: .7rem;
+    }
+    img.producto_principal {
+        max-width: 400px;
+        transform: translateY(2rem) scale(1.5);
+    }
+}
+
+
+
+
+
+
+
+
 
 @keyframes in {
     0% {top: 0px;}
@@ -193,10 +255,33 @@ img.producto_economico {
 
 
 
-img.producto_vector {
+.vector_hero{
     width: 100%;
-    margin-top: 4rem;
+    height: 180px;
+
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    top: 52rem;
+
+    color: #8DB6AC;
+
+    background: url(../imagenes/VectorHero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.overlay{
+    width: 100%;
+    height: 50rem;
+
+    z-index: -1;
+    background:  url(../imagenes/Overlay2.png), linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(147,255,216,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 /*********** LIMPIEZA ***********/
@@ -204,7 +289,6 @@ img.producto_vector {
 .limpieza{
     display: flex;
     margin-top: 10rem; 
-    margin-left: 3rem;   
 }
 
 .limpieza_titulo{
@@ -217,13 +301,25 @@ img.producto_vector {
 .limpieza_parrafo{
     margin-top: 3rem;
 }
+
+.container_limpieza_carrusel{
+    overflow: hidden;
+}
+
+.container_circle{
+    width: 100%;
+    border-radius: 70% 0% 0% 70%;
+
+    overflow: hidden;
+}
+
+
 .limpieza_carrusel{
-    width: 50rem;
+    width: 100%;
   
 }
 .carrusel_imagen{
-    width: 42rem;
-    margin-left: 3rem;
+    width: 120%;
 }
 
 /*********** COMO SE USA ***********/
