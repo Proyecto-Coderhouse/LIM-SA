@@ -195,6 +195,17 @@ img.producto_principal {
     font-weight: 500;
     font-size: 1rem;
 }
+.vector_hero {
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-70px);
+    color: #8DB6AC;
+    background: url(../imagenes/VectorHero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 @media screen  and (max-width: 1300px){
     .icon_img_container{
@@ -222,6 +233,7 @@ img.producto_principal {
 }
 
 @media screen  and (max-width: 830px){
+  
     h1.producto_titulo1 {
         font-size: 4rem;
     }  
@@ -271,13 +283,10 @@ img.producto_principal {
 
 .vector_hero{
     width: 100%;
-    height: 180px;
+    height: 150px;
 
     margin: 0;
     padding: 0;
-
-    position: absolute;
-    top: 52rem;
 
     color: #8DB6AC;
 
@@ -295,9 +304,10 @@ img.producto_principal {
 
     color: #8DB6AC;
 
-    background: url(../imagenes/VectorHero.png);
+    background: url(../imagenes/Vector\ 2mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
+    transform: translateY(70px);
 }
 
 .overlay{
@@ -309,6 +319,18 @@ img.producto_principal {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img#icon2 {
+    margin-right: 4rem;
+}
+img#icon3 {
+    margin-left: 2rem;
+}
+
 
 
 
