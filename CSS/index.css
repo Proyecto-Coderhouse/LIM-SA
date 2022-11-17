@@ -408,6 +408,35 @@ img.comoseusa_imagen.img-fluid {
     font-style: italic;
 }
 
+.testimonios_container{
+    display: inline-flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.testimonios_container::-webkit-scrollbar{
+    display: none;
+    width: 10px;
+    height: 20px;
+    background-color: #ffffd82c;
+}
+
+.testimonios_container:hover::-webkit-scrollbar {
+    display: initial;  
+}
+
+.testimonios_container::-webkit-scrollbar-thumb {
+    background-color: #FFFFD8;
+}
+
+
+.img_testimonio{
+    width: 20rem;
+    padding: 3rem;
+    padding-bottom: 0;
+}
+
 /*********** SECCIONES ***********/
 
 .section_container{
